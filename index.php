@@ -7,4 +7,3 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/sf/support/ClassAutoloader.php';
 
 $app = Application::get();
 $app->addRouteMap('web')->run();
-

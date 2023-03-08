@@ -8,7 +8,7 @@ class Dispatcher
     {
         if(is_callable($track->action))
         {
-            return $track->action->__invoke($track->params);
+            return ($track->action)($track->params);
         }
 
         if(preg_match('#^(?<controller>[a-zA-Z0-9]+)@(?<action>[a-zA-Z0-9]+)$#', $track->action, $matches))

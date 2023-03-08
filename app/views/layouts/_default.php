@@ -9,7 +9,7 @@
 </head>
 <body>
     <?= $content ?>
-
+    
     <a href=<?= "$APP_BASE_URL" ?>>главная</a>
 </body>
 </html>
